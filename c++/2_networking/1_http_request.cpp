@@ -17,7 +17,7 @@ void request() {
 	const int		  status_code		   = response.status_code;
 	const std::string content_type		   = response.header["content-type"];
 	const std::string response_body_string = response.text;
-	const json response_body_json = json::parse(response.text);
+	const json		  response_body_json   = json::parse(response.text);
 
 	std::cout << "status_code: " << status_code << "\n"
 			  << "content_type: " << content_type << "\n"
