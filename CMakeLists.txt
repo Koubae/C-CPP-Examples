@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 20)
 
 
 ### CLion Run Configurations
-add_executable(C_CPP_Examples c++/1_simple/hello_world.cpp)
+add_executable(HELLO_WORLD c++/1_simple/hello_world.cpp)
