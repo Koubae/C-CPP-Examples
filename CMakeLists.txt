@@ -21,15 +21,21 @@ add_executable(1_HTTP_REQUEST c++/2_networking/1_http_request.cpp)
 include(FetchContent)
 
 # https://github.com/libcpr/example-cmake-fetch-content/blob/d99dfed29be9e1e3e9100b5b5abd714f701f7fbe/CMakeLists.txt#L25-L28
-if(WIN32) # Install dlls in the same directory as the executable on Windows
+if (WIN32) # Install dlls in the same directory as the executable on Windows
     set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
     set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
-endif()
+endif ()
 
 
 FetchContent_Declare(cpr GIT_REPOSITORY https://github.com/libcpr/cpr.git GIT_TAG 1.10.5)
 FetchContent_MakeAvailable(cpr)
+
+FetchContent_Declare(nlohmann_json GIT_REPOSITORY https://github.com/nlohmann/json.git GIT_TAG v3.11.3)
+FetchContent_MakeAvailable(nlohmann_json)
+
+
 target_link_libraries(1_HTTP_REQUEST PRIVATE cpr::cpr)
+target_link_libraries(1_HTTP_REQUEST PRIVATE nlohmann_json::nlohmann_json)
 
 # credit: https://stackoverflow.com/a/40599991/13903942
 # can't this be done ... better?
