@@ -3,4 +3,6 @@ project(C_CPP_Examples)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(C_CPP_Examples main.cpp)
+
+### CLion Run Configurations
+add_executable(C_CPP_Examples c++/1_simple/hello_world.cpp)

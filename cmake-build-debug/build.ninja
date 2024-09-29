@@ -49,11 +49,11 @@ cmake_ninja_workdir = C$:/programming/projects/c++/C-CPP-Examples/cmake-build-de
 
 build cmake_object_order_depends_target_C_CPP_Examples: phony || .
 
-build CMakeFiles/C_CPP_Examples.dir/main.cpp.obj: CXX_COMPILER__C_CPP_Examples_unscanned_Debug C$:/programming/projects/c++/C-CPP-Examples/main.cpp || cmake_object_order_depends_target_C_CPP_Examples
-  DEP_FILE = CMakeFiles\C_CPP_Examples.dir\main.cpp.obj.d
+build CMakeFiles/C_CPP_Examples.dir/c++/1_simple/hello_world.cpp.obj: CXX_COMPILER__C_CPP_Examples_unscanned_Debug C$:/programming/projects/c++/C-CPP-Examples/c++/1_simple/hello_world.cpp || cmake_object_order_depends_target_C_CPP_Examples
+  DEP_FILE = CMakeFiles\C_CPP_Examples.dir\c++\1_simple\hello_world.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\C_CPP_Examples.dir
-  OBJECT_FILE_DIR = CMakeFiles\C_CPP_Examples.dir
+  OBJECT_FILE_DIR = CMakeFiles\C_CPP_Examples.dir\c++\1_simple
 
 
 # =============================================================================
@@ -63,7 +63,7 @@ build CMakeFiles/C_CPP_Examples.dir/main.cpp.obj: CXX_COMPILER__C_CPP_Examples_u
 #############################################
 # Link the executable C_CPP_Examples.exe
 
-build C_CPP_Examples.exe: CXX_EXECUTABLE_LINKER__C_CPP_Examples_Debug CMakeFiles/C_CPP_Examples.dir/main.cpp.obj
+build C_CPP_Examples.exe: CXX_EXECUTABLE_LINKER__C_CPP_Examples_Debug CMakeFiles/C_CPP_Examples.dir/c++/1_simple/hello_world.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\C_CPP_Examples.dir
@@ -72,39 +72,6 @@ build C_CPP_Examples.exe: CXX_EXECUTABLE_LINKER__C_CPP_Examples_Debug CMakeFiles
   TARGET_FILE = C_CPP_Examples.exe
   TARGET_IMPLIB = libC_CPP_Examples.dll.a
   TARGET_PDB = C_CPP_Examples.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target example_2
-
-
-#############################################
-# Order-only phony target for example_2
-
-build cmake_object_order_depends_target_example_2: phony || .
-
-build CMakeFiles/example_2.dir/two.cpp.obj: CXX_COMPILER__example_2_unscanned_Debug C$:/programming/projects/c++/C-CPP-Examples/two.cpp || cmake_object_order_depends_target_example_2
-  DEP_FILE = CMakeFiles\example_2.dir\two.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\example_2.dir
-  OBJECT_FILE_DIR = CMakeFiles\example_2.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target example_2
-
-
-#############################################
-# Link the executable example_2.exe
-
-build example_2.exe: CXX_EXECUTABLE_LINKER__example_2_Debug CMakeFiles/example_2.dir/two.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\example_2.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = example_2.exe
-  TARGET_IMPLIB = libexample_2.dll.a
-  TARGET_PDB = example_2.exe.dbg
 
 
 #############################################
@@ -134,8 +101,6 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build C_CPP_Examples: phony C_CPP_Examples.exe
 
-build example_2: phony example_2.exe
-
 # =============================================================================
 # Folder targets.
 
@@ -144,7 +109,7 @@ build example_2: phony example_2.exe
 #############################################
 # Folder: C:/programming/projects/c++/C-CPP-Examples/cmake-build-debug
 
-build all: phony C_CPP_Examples.exe example_2.exe
+build all: phony C_CPP_Examples.exe
 
 # =============================================================================
 # Built-in targets

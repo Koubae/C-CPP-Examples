@@ -1,7 +1,10 @@
 # ninja log v6
 5	446	7493094167649541	CMakeFiles/C_CPP_Examples.dir/main.cpp.obj	8254aed7a5f065b7
 4	115	7493096007936048	C_CPP_Examples.exe	7e5b160626378904
-7	415	7493095879234854	CMakeFiles/C_CPP_Examples.dir/two.cpp.obj	5f0010fb329ab72c
-2	291	7493096390167162	build.ninja	d88b7b94cf8005cc
-2	378	7493096435911393	CMakeFiles/example_2.dir/two.cpp.obj	de8b438661a9173
 378	517	7493096439670313	example_2.exe	5f5f5edf257079a7
+7	415	7493095879234854	CMakeFiles/C_CPP_Examples.dir/two.cpp.obj	5f0010fb329ab72c
+2	291	7493102763979637	build.ninja	d88b7b94cf8005cc
+2	378	7493096435911393	CMakeFiles/example_2.dir/two.cpp.obj	de8b438661a9173
+3	310	7493102763979637	build.ninja	d88b7b94cf8005cc
+3	525	7493102764373758	CMakeFiles/C_CPP_Examples.dir/c++/1_simple/hello_world.cpp.obj	be1309f98b14cff9
+525	682	7493102769600080	C_CPP_Examples.exe	7050003936a53b0b
