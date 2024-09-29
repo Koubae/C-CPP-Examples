@@ -1,0 +1,4 @@
+C:/programming/projects/c++/C-CPP-Examples/cmake-build-debug/CMakeFiles/C_CPP_Examples.dir
+C:/programming/projects/c++/C-CPP-Examples/cmake-build-debug/CMakeFiles/example_2.dir
+C:/programming/projects/c++/C-CPP-Examples/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/programming/projects/c++/C-CPP-Examples/cmake-build-debug/CMakeFiles/rebuild_cache.dir
