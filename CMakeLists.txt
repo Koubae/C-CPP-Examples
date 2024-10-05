@@ -12,6 +12,8 @@ add_executable(HELLO_WORLD c++/1_simple/hello_world.cpp)
 
 # 2) Networking
 add_executable(1_HTTP_REQUEST c++/2_networking/1_http_request.cpp)
+add_executable(1_TCP_ECHO_SERVER c++/2_networking/sockets/echo/server.cpp)
+add_executable(1_TCP_ECHO_CLIENT c++/2_networking/sockets/echo/client.cpp)
 # ==================================================================
 
 
@@ -24,7 +26,10 @@ include(FetchContent)
 if (WIN32) # Install dlls in the same directory as the executable on Windows
     set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
     set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+    target_link_libraries(1_TCP_ECHO_SERVER wsock32 ws2_32)
+    target_link_libraries(1_TCP_ECHO_CLIENT wsock32 ws2_32)
 endif ()
+
 
 
 FetchContent_Declare(cpr GIT_REPOSITORY https://github.com/libcpr/cpr.git GIT_TAG 1.10.5)
@@ -46,4 +51,4 @@ target_link_libraries(1_HTTP_REQUEST PRIVATE nlohmann_json::nlohmann_json)
 #        $<TARGET_FILE_DIR:uselib>                       # this is out-file path
 #)
 
-# ==================================================================
+# ==================================================================add_executable(1_TCP_ECHO_SERVER c++/2_networking/sockets/1_tcp_echo_server.cpp)
