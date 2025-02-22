@@ -20,6 +20,11 @@ add_executable(1_TCP_ECHO_SERVER c++/2_networking/sockets/windows/echo/server.cp
 add_executable(1_TCP_ECHO_CLIENT c++/2_networking/sockets/windows/echo/client.cpp)
 # ==================================================================
 
+### ----------------------------------------------------------------
+#                           SUB-DIRECTORIES
+### ----------------------------------------------------------------
+add_subdirectory(c++/1_simple/sub_cmake_project)
+
 
 ### ----------------------------------------------------------------
 #                           DEPENDENCIES
