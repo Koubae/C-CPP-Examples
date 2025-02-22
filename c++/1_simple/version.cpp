@@ -9,7 +9,7 @@
 std::string get_version() {
 	// C compatible, use std::to_string insted for more modern C++
 	char buffer[255];
-	sprintf(buffer, "(%d)", __cplusplus);
+	sprintf(buffer, "(%ld)", __cplusplus);
 	std::string actualVersion(buffer);
 	// std::string actualVersion = std::to_string(__cplusplus);
 
