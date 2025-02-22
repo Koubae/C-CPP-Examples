@@ -36,8 +36,8 @@ int main(const int _, char *argv[]) {
 		request();
 	} catch (const std::exception &error) {
 		std::cout << error.what() << std::endl;
-		return 1;
+		return EXIT_FAILURE;
 	}
 
-	return 0;
+	return EXIT_SUCCESS;
 }

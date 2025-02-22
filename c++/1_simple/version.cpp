@@ -45,5 +45,5 @@ std::string get_version() {
 int main() {
 	const std::string version = get_version();
 	std::cout << "Running C++ version --> " << version << std::endl;
-	return 0;
+	return EXIT_SUCCESS;
 }

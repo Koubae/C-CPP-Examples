@@ -120,5 +120,5 @@ int __cdecl main(int argc, char **argv) {
 	closesocket(ConnectSocket);
 	WSACleanup();
 
-	return 0;
+	return EXIT_SUCCESS;
 }
