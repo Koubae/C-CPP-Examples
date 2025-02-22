@@ -9,11 +9,12 @@ set(CMAKE_BUILD_TYPE Debug)
 ### ----------------------------------------------------------------
 # 1) Simple
 add_executable(HELLO_WORLD c++/1_simple/hello_world.cpp)
+add_executable(VERSION c++/1_simple/version.cpp)
 
 # 2) Networking
 add_executable(1_HTTP_REQUEST c++/2_networking/1_http_request.cpp)
-add_executable(1_TCP_ECHO_SERVER c++/2_networking/sockets/echo/server.cpp)
-add_executable(1_TCP_ECHO_CLIENT c++/2_networking/sockets/echo/client.cpp)
+add_executable(1_TCP_ECHO_SERVER c++/2_networking/sockets/windows/echo/server.cpp)
+add_executable(1_TCP_ECHO_CLIENT c++/2_networking/sockets/windows/echo/client.cpp)
 # ==================================================================
 
 
