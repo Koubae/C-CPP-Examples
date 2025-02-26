@@ -2,6 +2,11 @@ C/C++ Examples
 ==============
 
 
+The _**[c++/project_structure](./c++/project_structure)**_ and each of its subfolder should be open as 
+separate project using an IDE, I am using CLion. 
+The Idea is that you should open that folders directly, and it should show a very simple "application" to showcase different simple project structure + Building tools.
+
+
 ### Related
 
 * [Koubae/Programming-CookBook](https://github.com/Koubae/Programming-CookBook)
